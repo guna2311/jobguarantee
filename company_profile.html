@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Guarantee | Company Profile</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/company_profile_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="company-pro-container">
+            <div class="title">
+                <h2>Company Details</h2>
+            </div>
+            <form>
+                <div class="company-container">
+                    <div class="dp-div">
+                        <img class='dp-img' src='uploads/com/blank.png' alt="Company Logo">
+                    </div>
+                    <div class="border1">
+                        <label class="company-label">First Name</label><br>
+                        <input class="company-input" type="text" placeholder="e.g Jack" name="fname" required>
+                        <br>
+                        <label class="company-label">Company Name</label><br>
+                        <input class="company-input" type="text" placeholder="e.g Codeplex Pvt Ltd." name="com_name" required>
+                        <br>
+                        <label class="company-label">Email</label><br>
+                        <input class="company-input" type="email" placeholder="e.g company_name@gmail.com" name="email" readonly disabled>
+                        <br>
+                    </div>
+                    <div class="border2">
+                        <label class="company-label">Last Name</label><br>
+                        <input class="company-input" type="text" placeholder="e.g Doe" name="lname" required>
+                        <br>
+                        <label class="company-label">Company Website</label><br>
+                        <input class="company-input" type="text" placeholder="https://www.company.com" name="com_link">
+                        <br>
+                        <label class="company-label">Phone No.</label><br>
+                        <input class="company-input" type="text" placeholder="10-digit mobile number" name="phone" required>
+                        <br>
+                    </div>
+                    <div class="border3">
+                        <label class="company-label">About Company</label><br>
+                        <textarea class="company-textarea" name="com_about" placeholder="Max 300 characters." required></textarea>
+                        <br>
+                    </div>
+                    
+                    <div class="edit-btn">
+                        <input class="edit" type="submit" value="Save">
+                    </div>
+            </form>
+                <div class="dp-form-div">
+                    <form enctype="multipart/form-data">
+                        <input class="choose-btn" type="file" name="dpFile">    
+                        <input type="submit" class="btn-dp" value="Upload">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Job Guarantee. All rights reserved.</p>
+    </footer>
+</body>
+</html>

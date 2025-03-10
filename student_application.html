@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Guarantee | Show Applications</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/show_applications_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+    <script type="text/javascript" src="script/actionAjax.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar inclusion -->
+        <nav>
+            <!-- Add navigation menu here -->
+        </nav>
+    </header>
+    
+    <main>
+        <div class="application-container">
+            <div class="dashboard-title"><p>Applications for [Internship Title]</p></div>
+            <div class="filter">
+                <form>
+                    <div class="filter-header">
+                        <button class="btn1 allbtn" type="submit" name="status" value="New">New (X)</button>
+                    </div>
+                    <div class="filter-header">
+                        <button class="btn2 allbtn" type="submit" name="status" value="Shortlisted">Shortlisted (X)</button>
+                    </div>
+                    <div class="filter-header">
+                        <button class="btn3 allbtn" type="submit" name="status" value="Hired">Hired (X)</button>
+                    </div>
+                    <div class="filter-header">
+                        <button class="btn4 allbtn" type="submit" name="status" value="Rejected">Rejected (X)</button>
+                    </div>
+                </form>
+            </div>
+            <div class="application-table">
+                <table>
+                    <tr class="table-head">
+                        <th>Name</th>
+                        <th>Applied On</th>
+                        <th>Status</th>
+                        <th>Resume</th>
+                        <th colspan="4">Action</th>
+                    </tr>
+                    <tr class='table-data'>
+                        <td class='p-data'>John Doe</td>
+                        <td class='p-data'>2025-03-10</td>
+                        <td>New</td>
+                        <td><a href="#"><img class='btnAction' src='images/icons/cv.png' title='Check student resume'></a></td>
+                        <td><a href="#"><img src='images/icons/new.png' height='35px' width='35px' title='Add back to New list'></a></td>
+                        <td><a href="#"><img src='images/icons/shortlisted.png' height='35px' width='35px' title='Shortlist student'></a></td>
+                        <td><a href="#"><img src='images/icons/accepted.png' height='35px' width='35px' title='Hire student'></a></td>
+                        <td><a href="#"><img src='images/icons/rejected.png' height='35px' width='35px' title='Reject student'></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Job Guarantee</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Guarantee</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+<script>
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('navbar-container').innerHTML = data)
+        .catch(error => console.error('Error loading navbar:', error));
+</script>
+
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="internships.html">Internships</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="navbar-container"></div>
+
+
+    <!-- Main -->
+    <main>
+        <div class="index-search-bar">
+            <form action="internships.html" method="GET">
+                <input class="search" type="text" name="keyword" placeholder="What are you looking for? e.g Design, Mumbai, Infosys">
+                <input class="search-btn" type="submit" value="&#128269;">
+            </form>
+        </div>
+
+        <div class="slider">
+            <div class="imgslider">
+                <!-- Image slider content goes here -->
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Internships</h2>
+            <p>Apply to 10,000+ internships for free</p>
+            <div class="view-all-int">
+                <a href="internships.html">View all internships <b>&ShortRightArrow;</b></a>
+            </div>
+        </div>
+
+        <!-- Popular Cities -->
+        <div class="img-div">
+            <h2 class="img-title">Popular Cities</h2>
+            <div class="images">
+                <div class="box">
+                    <a href="internships.html?location=Remote">
+                        <img src="images/1wfh.png" alt="Work from Home">
+                        <p>Work from Home</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?location=Delhi">
+                        <img src="images/2delhi.png" alt="Delhi/NCR">
+                        <p>Delhi/NCR</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?location=Bangalore">
+                        <img src="images/3banglor.png" alt="Bangalore">
+                        <p>Bangalore</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?location=Mumbai">
+                        <img src="images/4mumbai.png" alt="Mumbai">
+                        <p>Mumbai</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?location=Chennai">
+                        <img src="images/5chennai.png" alt="Chennai">
+                        <p>Chennai</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?location=Kolkata">
+                        <img src="images/6kolkata.png" alt="Kolkata">
+                        <p>Kolkata</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popular Categories -->
+        <div class="img-div">
+            <h2 class="img-title">Popular Categories</h2>
+            <div class="images">
+                <div class="box">
+                    <a href="internships.html?category=Information%20Technology">
+                        <img src="images/cat1.png" alt="Information Technology">
+                        <p>Information Technology</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?category=Business%20Management">
+                        <img src="images/cat2.png" alt="Business Management">
+                        <p>Business Management</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?category=Humanities">
+                        <img src="images/cat3.png" alt="Humanities">
+                        <p>Humanities</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?category=Science%20Technology">
+                        <img src="images/cat4.png" alt="Science & Technology">
+                        <p>Science & Technology</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?category=Law">
+                        <img src="images/cat5.png" alt="Law">
+                        <p>Law</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="internships.html?category=Architecture">
+                        <img src="images/cat6.png" alt="Architecture">
+                        <p>Architecture</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Job Guarantee. All rights reserved.</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

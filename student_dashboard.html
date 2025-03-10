@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Guarantee | Student Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/student_dashboard_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!-- Navigation bar placeholder -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--main-->
+    <main>
+        <div class="dash-container">
+            <div class="dash-content">
+                <p>My Applications</p>
+            </div>
+            
+            <div class="dashboard-table">
+                <table>
+                    <tr class="table-head">
+                        <th>Applied On</th>
+                        <th>Profile</th>
+                        <th>Company</th>
+                        <th>Status</th>
+                        <th class="th-msg">Message</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                    
+                    <tr class="table-data">
+                        <td class='p-data'>2025-03-01</td>
+                        <td class='p-data'>Software Engineer Intern</td>
+                        <td class='p-data'>Tech Corp</td>
+                        <td class='p-data'>Applied</td>
+                        <td class='p-data'>Your application is under process.</td>
+                        <td>
+                            <a href='review_application.html' target='_blank'>
+                                <img class='btnAction' src='images/icons/cv.png' title='Show application.'>
+                            </a>
+                        </td>
+                        <td>
+                            <a href='#' onclick='confirmDelete()'>
+                                <img src='images/icons/trash.png' height='40px' width='40px' title='Delete Application'>
+                            </a>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <!--footer-->
+    <footer>
+        <p>&copy; 2025 Job Guarantee. All rights reserved.</p>
+    </footer>
+</body>
+</html>

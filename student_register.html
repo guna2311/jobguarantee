@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Guarantee | Student Register</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/student_reg_style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Include your navigation menu here -->
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="reg-background">
+            <div class="reg-overly">
+                <div class="sign-up-label">
+                    <h2>Sign-up and apply for free</h2>
+                    <p>1,50,000+ companies hiring on Internshop</p>
+                </div>
+                
+                <!-- Student Register Form -->
+                <div class="reg-style">
+                    <form method="POST" action="student_register.php" id="reg-form">
+                        <div class="form">
+                            <div class="register-text">
+                                <div id="msg"></div>
+                                <h1>Student Registration</h1>
+                            </div>
+                            <div class="r-input">
+                                <label for="first" class="r-label">First Name</label>
+                                <input class="reg-input" id="first" type="text" placeholder="e.g. John" name="fname" required pattern="^[A-Za-z]{2,30}$">
+                            </div>
+                            <div class="r-input">
+                                <label for="last" class="r-label">Last Name</label>
+                                <input class="reg-input" id="last" type="text" placeholder="e.g. Wick" name="lname" required pattern="^[A-Za-z]{2,30}$">
+                            </div>
+                            <div class="r-input">
+                                <label for="email" class="r-label">Email</label>
+                                <input class="reg-input" id="email" type="email" placeholder="e.g. john@gmail.com" name="email" required>
+                            </div>
+                            <div class="r-input">
+                                <label for="num" class="r-label">Phone Number</label>
+                                <input class="reg-input" id="num" type="text" placeholder="10 digit Mobile number" name="phno" required pattern="^[789][0-9]{9}$">
+                            </div>
+                            <div class="r-input">
+                                <label for="pass" class="r-label">Password</label>
+                                <input class="reg-input" id="pass" type="password" placeholder="Must be at least 6 characters" name="pass" required>
+                            </div>
+                            <div class="ter-con">
+                                <p>By signing up, you agree to our <a href="#">Terms and Conditions</a>.</p>
+                            </div>
+                            <div class="reg-sub-btn-hover">
+                                <input class="reg-sub-btn" type="submit" value="Sign-up">
+                            </div>
+                            <div class="r-new-to-internshop">
+                                <p>Already registered? <a href="student_login.html">Login</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <!-- Include your footer here -->
+    </footer>
+</body>
+</html>

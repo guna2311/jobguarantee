@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Guarantee | Internship</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/internships_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="internships.html">Internships</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="internship-post-container">
+            <h2>Internship Listings</h2>
+            
+            <form method="GET">
+                <div class="filter-container">
+                    <h3>Filters</h3>
+                    <div>
+                        <label>Location</label><br>
+                        <input class="filter-input" type="text" name="location" placeholder="e.g. Mumbai, Remote">
+                    </div>
+                    <div>
+                        <label>Minimum monthly stipend (₹)</label><br>
+                        <input class="filter-input" type="text" name="stipend" placeholder="e.g. ₹1000">
+                    </div>
+                    <div>
+                        <label>Profile</label><br>
+                        <input class="filter-input" type="text" name="profile" placeholder="e.g Web Development">
+                    </div>
+                    <br>
+                    <h3> OR </h3>
+                    <div>
+                        <label>Keyword</label><br>
+                        <input class="filter-input" type="text" name="keyword" placeholder="Search with keyword.">
+                    </div>
+                    <div>
+                        <input class="filter-sub-btn" type="submit" value="Search">
+                    </div>
+                </div>
+            </form>
+            
+            <div class="post-container">
+                <h3>Internship Profile</h3>
+                <div class="company-img">
+                    <img class="img-logo" src="images/company_logo.png" alt="Company Logo">
+                </div>
+                <p class="company-name">Company Name</p>
+                <div class="logo-name">
+                    <img class="loc-logo" src="images/icons/location.png">
+                    <span class="titles-content">Location</span>
+                </div>
+                <div class="titles">
+                    <div>Start Date</div>
+                    <div>Duration</div>
+                    <div>Stipend</div>
+                    <div>Openings</div>
+                    <div>Apply by</div>
+                    <a href="internships_details.html"><div class="view-details">View Details</div></a>
+                </div>
+                <div class="titles-content">
+                    <div>DD/MM/YYYY</div>
+                    <div>X months</div>
+                    <div>₹ X,XXX</div>
+                    <div>X openings</div>
+                    <div>DD/MM/YYYY</div>
+                </div>
+                <div>
+                    <input type="submit" class="bookmark" value="Add to bookmarks">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 - Job Guarantee</p>
+            <ul>
+                <li><a href="terms_condition.html">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

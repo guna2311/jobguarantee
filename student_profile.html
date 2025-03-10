@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Guarantee | Profile</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/student_profile_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Placeholder -->
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="profile-container">
+            <div class="title">
+                <h2>Personal Details</h2>
+            </div>
+            <form method="POST">
+                <div class="stu-profile-container">
+                    <div class="dp-div">
+                        <img class='dp-img' src='uploads/dp/blank.jpg' alt="Profile Picture">
+                    </div>
+                    <div class="border1">
+                        <label class="profile-label">First Name</label><br>
+                        <input class="profile-input" type="text" placeholder="Raj" name="fname" required pattern="^[A-Za-z]{2,30}$"><br>
+                        
+                        <label class="profile-label">Email</label><br>
+                        <input class="profile-input" type="email" placeholder="e.g rajkumar@gmail.com" name="email" readonly disabled><br>
+                        
+                        <label class="profile-label">Current City</label><br>
+                        <input class="profile-input" type="text" placeholder="e.g Mumbai, Pune, Kolkata" name="city" required pattern="^[A-Za-z]{2,30}$"><br>
+                    </div>
+                    <div class="border2">
+                        <label class="profile-label">Last Name</label><br>
+                        <input class="profile-input" type="text" placeholder="Kumar" name="lname" required pattern="^[A-Za-z]{2,30}$"><br>
+                        
+                        <label class="profile-label">Phone No.</label><br>
+                        <input class="profile-input" type="text" placeholder="e.g 9874563729" name="phone" required pattern="^[789][0-9]{9}$"><br>
+                        
+                        <label class="profile-label">Gender</label><br>
+                        <select class="profile-input" name="gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="edit" type="submit" value="Save" name="save">
+                    </div>
+                </form>
+                <div class="dp-form-div">
+                    <form method="POST" enctype="multipart/form-data">
+                        <input type="file" name="dpFile">    
+                        <input type="submit" class="btn-dp" name="dpUpload" value="Upload">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <!-- Footer Placeholder -->
+    </footer>
+</body>
+</html>

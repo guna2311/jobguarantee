@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Guarantee | Student Delete Account</title>
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/delete_account_style.css">
+    <script type="text/javascript" src="script/errorMessage.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="delete-account-container">
+            <h2>Delete my account</h2>
+            <form>
+                <div class="delete-account-text">
+                    <p class="messege">
+                        Hello [User Name], we’re sorry to see you go.
+                    </p>
+                    <p class="messege">
+                        Please note that deleting your account is irreversible, and all data associated with your
+                        <b>[User Email]</b> account (including access to trainings) will be permanently deleted.
+                    </p>
+                </div>
+                <div class="delete-account">
+                    <div class="label-input">
+                        <p class="messege-bold">
+                            Before you leave, please tell us why you'd like to delete your account.
+                            This information will help us improve.
+                        </p>
+                        <textarea placeholder="Your feedback matters. Max 500 characters." class="delete-account-textarea" name="feedback" style="resize: none;"></textarea>
+                    </div>
+                    <div class="label-input">
+                        <label>Password</label><br>
+                        <input class="delete-account-input" type="password" placeholder="Confirm password to delete account." name="pass" required>
+                    </div>
+                    <div class="label-input">
+                        <input class="delete-account-sub-btn" type="submit" value="Bye! Bye! Internshop" onclick="confirmDelete()">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Job Guarantee. All rights reserved.</p>
+    </footer>
+
+    <script type="text/javascript">
+        function confirmDelete() {
+            var response = confirm("Do you really want to delete your account?");
+            if (!response) {
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Guarantee Portal</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/nav.css">
+
+    <!-- Internal CSS for quick debugging -->
+    <style>
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #F3703A;
+        }
+
+        .logo img {
+            height: 70px;
+            width: auto;
+            display: block;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .navbar h1 span {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+
+        ul li ul {
+            display: none;
+            position: absolute;
+            background: white;
+            padding: 10px;
+            list-style: none;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        .profile-icon img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        #notify {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/icons/logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <h1>
+        <span style="color: black;">Welcome to the</span> 
+        <span>Job Guarantee Portal</span>
+    </h1>
+
+    <ul>
+        <li><a href="internships.html">Internships ▼</a>
+            <ul>
+                <li><a href="#">Location ▶</a>
+                    <ul>
+                        <li><a href="#">Remote</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Kolkata</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Category ▶</a>
+                    <ul>
+                        <li><a href="#">Information Technology</a></li>
+                        <li><a href="#">Business Management</a></li>
+                        <li><a href="#">Humanities</a></li>
+                        <li><a href="#">Science & Technology</a></li>
+                        <li><a href="#">Law</a></li>
+                        <li><a href="#">Architecture</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Register ▼</a>
+            <ul>
+                <li><a href="#">As a Student</a></li>
+                <li><a href="#">As an Employer</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Login ▼</a>
+            <ul>
+                <li><a href="#">As a Student</a></li>
+                <li><a href="#">As an Employer</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div id="notify"></div>
+
+</body>
+</html>
